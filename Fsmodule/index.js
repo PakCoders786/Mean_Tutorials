@@ -18,11 +18,11 @@ try {
     // // for multiple folders creation
     // await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new'{recursive : true});
     // reading files
-    const files = await fs.readdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule')
-    for(file of files){
-        console.log(file)
-    }
-    
+    // const files = await fs.readdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule')
+    // for(file of files){
+    //     console.log(file)
+    // }
+    await fs.rmdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\\Mean_Tutorials\\Fsmodule')
 } catch (error) {
     console.log(error)
 }
