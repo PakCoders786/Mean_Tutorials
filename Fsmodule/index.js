@@ -14,9 +14,14 @@
 import * as fs  from 'fs/promises'
 //creating a directory
 try {
-    await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new')
-    // for multiple folders creation
-    await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new'{recursive : true});
+    // await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new')
+    // // for multiple folders creation
+    // await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new'{recursive : true});
+    // reading files
+    const files = await fs.readdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule')
+    for(file of files){
+        console.log(file)
+    }
     
 } catch (error) {
     console.log(error)
