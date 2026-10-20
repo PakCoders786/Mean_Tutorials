@@ -15,6 +15,9 @@ import * as fs  from 'fs/promises'
 //creating a directory
 try {
     await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new')
+    // for multiple folders creation
+    await fs.mkdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\Mean_Tutorials\\Fsmodule\\new',(recursive : true))
+    
 } catch (error) {
     console.log(error)
 }
