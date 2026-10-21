@@ -25,9 +25,11 @@ try {
     // }
     // await fs.rmdir('C:\\Users\\Ashhar\\OneDrive\\Documents\\GitHub\\\Mean_Tutorials\\Fsmodule');
     // create and wrie a file
-
- await fs.writeFile('Hello.txt','Hello from node JS')
- await fs.appendFile("Hello.txt","Mission is started " )
+    // create a copy of file
+await fs.copyFile('Hello.txt','info.txt')
+//  await fs.writeFile('Hello.txt','Hello from node JS')
+//  await fs.appendFile("Hello.txt","Mission is started " )
+ 
 // const data = await fs.readFile('Hello.txt','utf-8')
 console.log(data)
 } catch (error) {
