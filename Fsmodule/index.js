@@ -40,9 +40,9 @@
 //     console.log(error)
 // }
 // created directory successfully
-import * as fs from "fs"
+// import * as fs from "fs"
 
-fs.mkdir(".\\new",(error)=>{
-    if(error) throw error;
-    console.log("Directory created successfully");
-})
+// fs.mkdir(".\\new",(error)=>{
+//     if(error) throw error;
+//     console.log("Directory created successfully");
+// })
